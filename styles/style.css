@@ -1,0 +1,168 @@
+/* Variables */
+:root {
+    /* Colors */
+    --background-color: #F0F1F4;
+    --dark-color: #252626;
+    --orange-color: #EF7839;
+    --dblue-color: #485AA8;
+    --lblue-color: #787BBB;
+    --grey-color: #D7DADD;
+    --text-color:var(--dark-color);
+    /* Text style*/
+    --heading-text: 'Suprapower', sans-serif;
+    --main-text: 'Suprapower', sans-serif;
+    --description-text: 'Sukhumvit', sans-serif;
+    /* Text size */
+    --heading-card-size: 40px;
+    --heading-service-size: 64px;
+    --navigation-size: 20px;
+    --description-size: 32px
+}
+/* Overall tags */
+body{
+    background: var(--background-color);
+}
+
+h1{
+    font-family: var(--heading-text);
+    font-size: var(--heading-card-size);
+    color: var(--background-color);
+}
+
+a{
+    all: unset;
+    font: var(--description-text);
+    text-decoration: none;
+    color: var(--text-color);
+}
+/* Container and wrappers */
+
+.container{
+    margin: 95px 64px;
+    padding: 0;
+}
+.row{
+    display: flex;
+    width: 100%;
+}
+/* Navigation menu */
+header{
+    display: flex;
+    align-items: center;
+    margin: 95px 64px;
+}
+
+ul{
+    margin: 0;
+}
+
+li::marker {
+    content: none;
+}
+
+.header-menu-list{
+    display: flex;
+    gap: 32px;
+}
+
+#MainLogo{
+    height: 72px;
+}
+
+/* Cards */
+
+.big-square{
+    border-radius: 53.243px;
+    background: var(--dark-color);
+    height: 460px;
+    position: relative;
+}
+
+.small-square-left{
+    border-radius: 53.243px;
+    background: var(--orange-color);
+    height: 220px;
+    padding: 0;
+    position: relative;
+}
+.small-square-right{
+    border-radius: 53.243px;
+    background: var(--lblue-color);
+    height: 220px;
+    padding: 0;
+    position: relative;
+}
+
+.rectangle{
+    border-radius: 53.243px;
+    height: 220px;
+    background: var(--grey-color);
+    position: relative;
+}
+
+.leftside{
+    padding-right: 15px;
+}
+
+.rightside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+.leftside-small{
+    padding-right: 15px;
+}
+
+.rightside-small{
+    padding-left: 15px;
+}
+
+.cards-dashboard{
+    display: flex;
+}
+
+.small-row{
+    display: flex;
+}
+
+/* Card text & Pics */
+
+.card-top-text {
+    position: absolute;
+    top: 25px;
+    left: 32px;
+}
+
+.card-bottom-text {
+    position: absolute;
+    bottom: 25px;
+    left: 32px;
+}
+
+.text-dark{
+    color: var(--dark-color);
+}
+
+.kitten-logo{
+    position: absolute;
+    bottom: 25px;
+    right: 32px;
+}
+
+#KittenLogo{
+    height: 195px;
+}
+
+
+/* Font rules */
+@font-face {
+    font-family: "Suprapower";
+    src: url("fonts/suprapower-se/SuprapowerSE-Heavy.otf");
+}
+
+@font-face {
+    font-family: "Sukhumvit";
+    src: url("fonts/sukhumvit/SukhumvitSet-Bold.ttf");
+}
